@@ -1,7 +1,7 @@
 import random
 
 class Hangman():
-    def __init__(self, turn_count=0, error_count=0, lives=5):
+    def __init__(self):
         self.turn_count = 0
         self.error_count = 0
         self.lives = 5
@@ -9,9 +9,6 @@ class Hangman():
         self.word_to_find = []
         for i in random.choice(self.possible_words):
             self.word_to_find.append(i.upper())
-        
-        print(self.word_to_find)
-        print(len(self.word_to_find))
         self.correctly_guessed_letters=["_" for x in range(len(self.word_to_find))]
         self.wrongly_guessed_letters = []
 
@@ -23,9 +20,10 @@ class Hangman():
                 print("Please return only 1 input, please retry")
                 print(self.correctly_guessed_letters)
                 continue
-
-            if player_input.isdigit():
-                print("Please return a letter - not a number")
+            
+            special_characters = '"!@#$%^&*()-+?._=,<>/"'
+            if player_input.isdigit() or player_input in special_characters:
+                print("Please return a letter - not a number or special character")
                 print(self.correctly_guessed_letters)
                 continue
             else:
@@ -39,19 +37,24 @@ class Hangman():
                         self.correctly_guessed_letters[i] = player_input
                     break
                 else:
-                    self.wrongly_guessed_letters.append(player_input)
+                    if player_input not in self.wrongly_guessed_letters: 
+                        self.wrongly_guessed_letters.append(player_input)
                     self.error_count += 1
                     self.lives -= 1
                     break
 
     def game_over(self):
+        print("[!!!] Game Over - You have lost all your lives! [!!!]")
+        print("#### YOUR END RESULT ####")
         print(self.correctly_guessed_letters)
+        print("#### WORD WE WERE LOOKING FOR WAS ####")
         print(self.word_to_find)
-        print("Game Over - You have lost all your lives! ")
+
         exit()
         
     def well_played(self):
-        print(f"You found the word: {self.word_to_find} in {self.turn_count} turns with {self.error_count} errors!")
+        print("\n")
+        print(f"[!*!] You found the word: {self.word_to_find} in {self.turn_count} turns with {self.error_count} errors! [!*!]")
         exit()
 
     def start_game(self):
