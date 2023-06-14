@@ -1,2 +1,4 @@
-from utils.game import Game
+from utils.game import Hangman
 
+game = Hangman()
+game.play()
