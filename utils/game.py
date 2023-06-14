@@ -36,7 +36,7 @@ class Hangman():
 
             # filter out the special characters + filter out if its a number (return to Input if it is)
             special_characters = '"!@#$%^&*()-+?._=,<>/"'
-            if player_input.isdigit() or player_input in special_characters:
+            if player_input.isdigit() or player_input in special_characters or player_input == " ":
                 print("Please return a letter - not a number or special character, try again ...")
                 # print the  _ _ _ _ _ (depending on length of letters - just to make it nice for the player visually)
                 print(self.correctly_guessed_letters)
