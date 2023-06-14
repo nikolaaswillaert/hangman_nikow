@@ -116,6 +116,6 @@ class Hangman():
             # if both conditions are not met we will play the game
             Hangman.play(self)
             # after each iteration of the play method we will print the current status
-            print(f"Letters you have right: {self.correctly_guessed_letters}, Wrong: {self.wrongly_guessed_letters}, lives: {self.lives}, errors: {self.error_count}, turns: {self.turn_count}")
+            print(f"Letters you have found: {self.correctly_guessed_letters}, Wrong guesses: {self.wrongly_guessed_letters}, lives: {self.lives}, errors: {self.error_count}, turns: {self.turn_count}")
             
 
