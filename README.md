@@ -24,8 +24,8 @@ python3 main.py
 
 or open in IDE and run the main.py file
 
-## Timeline (How long did the project take?)
-Approximately 5.5 hours
+## Timeline
+Approximately 5.5 hours to completion
 - Started assignment on 14/06/2023 - 9.30 (am)
 - Finished assignment on 14/06/2023 - 15:00 (pm)
 
