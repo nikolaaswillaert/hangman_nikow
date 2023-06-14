@@ -1,4 +1,8 @@
 from utils.game import Hangman
 
-game = Hangman()
-game.play()
+def main():
+    game = Hangman()
+    game.start_game()
+
+if __name__ == '__main__':
+    main()
