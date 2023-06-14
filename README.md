@@ -15,11 +15,11 @@ have added the requirements.txt file as wel if for some reason the code would no
  execute: pip install -r requirements.txt
 
 ## Usage
+Navigate to your workfolder
 ```
-1) Navigate to your workfolder
-2) git clone the repository (git clone git@github.com:nikolaaswillaert/hangman_nikow.git)
-3) cd hangman_nikow
-4) python3 main.py
+git clone the repository (git clone git@github.com:nikolaaswillaert/hangman_nikow.git)
+cd hangman_nikow
+python3 main.py
 ```
 
 or open in IDE and run the main.py file
