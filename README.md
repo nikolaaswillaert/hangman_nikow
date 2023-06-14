@@ -15,9 +15,9 @@ have added the requirements.txt file as wel if for some reason the code would no
  execute: pip install -r requirements.txt
 
 ## Usage
-Navigate to your workfolder
+Navigate to your workfolder and clone the repository:
 ```
-git clone the repository (git clone git@github.com:nikolaaswillaert/hangman_nikow.git)
+git clone git@github.com:nikolaaswillaert/hangman_nikow.git
 cd hangman_nikow
 python3 main.py
 ```
