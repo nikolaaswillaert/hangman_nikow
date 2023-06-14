@@ -1,18 +1,17 @@
 
-## Hangman game - written in python 3.11
+## Hangman game (Python 3.11)
 
-
-This is a simple CLI-based hangman game where the player will be prompted for
-some input and has to guess which word the computer (opponent) is looking for. You start out with 5 lives, each
-error you make will deduct 1 life point. The game will finish once your life points hit 0 or if you manage to find
-the correct word!
+This is a simple CLI-based hangman game written in Python 3.11 where the player will be prompted for
+some input and has to guess which word the computer (opponent) is looking for. You start out with 5 lives, each error you make will deduct 1 life point. The game will finish once your life points hit 0 or if you manage to find the correct word!
 
 Good Luck!
 
 ## Installation
 Program was written using python 3.11. Please make sure you have python 3.11 installed.
 have added the requirements.txt file as wel if for some reason the code would not run:
- execute: pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 Navigate to your workfolder and clone the repository:
