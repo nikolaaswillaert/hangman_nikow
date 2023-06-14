@@ -1,15 +1,6 @@
 
 ## Hangman game - written in python 3.11
 
-   _    _                   __  __             
- | |  | |                 |  \/  |            
- | |__| | __ _ _ __   __ _| \  / | __ _ _ __  
- |  __  |/ _` | '_ \ / _` | |\/| |/ _` | '_ \ 
- | |  | | (_| | | | | (_| | |  | | (_| | | | |
- |_|  |_|\__,_|_| |_|\__, |_|  |_|\__,_|_| |_|
-                      __/ |                   
-                     |___/                     
-
 
 This is a simple CLI-based hangman game where the player will be prompted for
 some input and has to guess which word the computer (opponent) is looking for. You start out with 5 lives, each
