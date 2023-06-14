@@ -1,14 +1,14 @@
 import random
 
 class Hangman():
-    def __init__(self):
+    def __init__(self, possible_words):
         # initiating the attributes turn count, error count (both 0 at start of game)
         # intiate lives (standard = 5)
         # initiate the possible words (can adjust or add words in this list if needed)
         self.turn_count = 0
         self.error_count = 0
         self.lives = 5
-        self.possible_words = ['becode', 'learning', 'mathematics', 'sessions']
+        self.possible_words = possible_words
         # the word to find is linked to the possible words, we choose one random word out of the possible words list
         self.word_to_find = []
         # pick a random word out of the list of possible words
@@ -100,17 +100,22 @@ class Hangman():
                       __/ |                   
                      |___/                     """)
         print("---------------------------------------------")
-        print("[] The word we are looking for... []")
+        print("[?] What word are we looking for [?]")
         print("---------------------------------------------")
+        # print the correctly guessed letters (which will be blank because we are just starting the game)
         print(self.correctly_guessed_letters)
         print("---------------------------------------------")
+        # start while True loop to check if the player still has lives / and if the word is guessed already or not
         while True:
+            # if no more lives then it's game over
             if self.lives == 0:
                 Hangman.game_over(self)
+            # if the correctly guessed letters are the same as the word we need to find then player won the game
             elif self.correctly_guessed_letters == self.word_to_find:
                 Hangman.well_played(self)
-
+            # if both conditions are not met we will play the game
             Hangman.play(self)
-            print(f"correct: {self.correctly_guessed_letters}, wrong: {self.wrongly_guessed_letters}, life: {self.lives}, error: {self.error_count}, turns: {self.turn_count}")
+            # after each iteration of the play method we will print the current status
+            print(f"Letters you have right: {self.correctly_guessed_letters}, Wrong: {self.wrongly_guessed_letters}, lives: {self.lives}, errors: {self.error_count}, turns: {self.turn_count}")
             
 
