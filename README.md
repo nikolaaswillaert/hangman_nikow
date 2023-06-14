@@ -25,9 +25,9 @@ python3 main.py
 or open in IDE and run the main.py file
 
 ## Timeline (How long did the project take?)
-approximately 5.5 hours
-Started assignment on 14/06/2023 - 9.30 (am)
-Finished assignment on 14/06/2023 - 15:00 (pm)
+Approximately 5.5 hours
+- Started assignment on 14/06/2023 - 9.30 (am)
+- Finished assignment on 14/06/2023 - 15:00 (pm)
 
 ## Personal situation
 This project was done as part of the AI Boocamp at BeCode.org
